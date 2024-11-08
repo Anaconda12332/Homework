@@ -1,17 +1,10 @@
-'''
+
 def numbers(*numb):
-    if numb == :
+    if numb[0] == numb[1]:
         pass
     else:
-        return sorted(a, b)
-'''
+        return sorted(numb)
     
 user_input=list(map(float, (input('Введите два числа через пробел: ')).split()))
 
-if user_input[0] == user_input[1] :
-    pass
-else:
-    print(sorted(user_input))
-
-
-#print(numbers(user_input[0], user_input[1]))
+print(numbers(*user_input))

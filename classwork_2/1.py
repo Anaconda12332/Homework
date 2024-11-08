@@ -1,19 +1,19 @@
-user_input=float(input('Введите число в диапазоне от 1 до 100: ')) 
 
-if 1 <= user_input < 100:
+def a(numbers):
+    if numbers %3 == 0 and numbers %5 == 0:
+        return('Fizz Buzz')
 
-    if user_input %3 == 0 and user_input %5 == 0:
-        print('Fizz Buzz')
-
-    elif user_input %3 == 0 or user_input %5 == 0:
-        if user_input %3 == 0:
-            print('Fizz')
-        elif user_input %5 == 0:
-            print('Buzz')
+    elif numbers %3 == 0 or numbers %5 == 0:
+        if numbers %3 == 0:
+            return('Fizz')
+        elif numbers %5 == 0:
+            return('Buzz')
 
     else:
-        print(user_input)
+        return(numbers)
 
-else:
-    print('Ошибка, введите число в диапазоне от 1 до 100!')
-    
+
+
+user_input=float(input('Введите число в диапазоне от 1 до 100: ')) 
+
+print(a(user_input)) if 1 <= user_input < 100 else print('Ошибка, введите число в диапазоне от 1 до 100!')

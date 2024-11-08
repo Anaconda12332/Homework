@@ -7,21 +7,21 @@ def zp(numb):
         return 0.08
     
 
-a={}
+user_input=list(input('Введите имя менеджера: ').split())
+user_input_2=list(map(int, (input('Введите его уровень продаж: ').split())))
+best=max(user_input_2)
+result_zp=[]
 
-user_input=list(input('Введите имя менеджера: '))
-
-user_input_2=list(map(float, (input('Введите его уровень продаж: ').split())))
-
-
-
-for i, b in zip (user_input, user_input_2):
-    print(i, b)
-    a.update({i: b})
-    
-print(a)
+for i in user_input_2:
+    if i == best:
+        result_zp.append(200 + 200 + 200 * zp(i))
+    else:
+        result_zp.append(200 + 200 * zp(i))
 
 
-result= 200 + zp(user_input_2)
+user_dict_zp=dict(zip(user_input, result_zp))
+user_dict=dict(zip(user_input_2, user_input))
 
-print(result)
+
+print(f'Зарплата менеждеров: {user_dict_zp}')
+print(f'Лучший менеджер: {user_dict[best]}')

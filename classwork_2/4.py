@@ -1,5 +1,5 @@
 def zp(numb):
-    if numb < 550:
+    if numb < 500:
         return 0.03
     elif 500 < numb < 1000:
         return 0.05

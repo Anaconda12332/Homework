@@ -7,8 +7,8 @@ def zp(numb):
         return 0.08
     
 
-user_input=list(input('Введите имя менеджера: ').split())
-user_input_2=list(map(int, (input('Введите его уровень продаж: ').split())))
+user_input=list(input('Введите имена менеджеров через пробел: ').split())
+user_input_2=list(map(int, (input('Введите их уровени продаж через пробел: ').split())))
 best=max(user_input_2)
 result_zp=[]
 

@@ -1,4 +1,4 @@
-def a(n, n_q):
+def a(num, num2):
     all=[]
     num_7=[]
     num_5=[]
@@ -13,4 +13,7 @@ def a(n, n_q):
 user_input=int(input('Введите начало диапазона: '))
 user_input_2=int(input('Введите конец диапазона: '))
 
-print(*(a(user_input, user_input_2)), sep='\n')
+print('Все числа диапазона:', *a(user_input, user_input_2)[0])
+print('Все числа диапазона в убывающем порядке:', *a(user_input, user_input_2)[1])
+print('Все числа кратные 7:', *a(user_input, user_input_2)[2])
+print('Количество чисел, кратных 5:', a(user_input, user_input_2)[3])

@@ -1,0 +1,33 @@
+Виртуальное окружение на git
+
+python -m venv .venv
+
+gitignore
+# venv
+.env
+.venv
+
+source .venv/bin/activate
+
+pip-пакетный менеджер 
+
+библиотека requests
+
+pip install requests
+
+import requests
+
+200-запрос принят
+406-не норм формат для запроса
+
+pip install beautifulsoup4
+
+pip install html5lib
+
+
+
+
+
+
+____________________
+Режим «a». Режим «a» также открывает файл на запись, но в отличие от режима «w», он добавляет данные в конец файла, не удаляя существующие.

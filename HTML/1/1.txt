@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="./style.css">
+пишется в html файле, связка файлов html and css
+
+solid-постоянная рамка(border)
+
+id юзается через #, уник элемент исп с джавой скрипт

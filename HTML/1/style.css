@@ -1,0 +1,29 @@
+h1{
+    color: rgb(8, 68, 196);
+    background-color: aqua;
+    font-size: 50px;
+    border: 4px black solid;
+}
+
+.color_text_red{
+    color: red;
+
+}
+
+.color_text_blue{
+    color: blue;
+
+}
+
+.color_text_green{
+    color: green;
+
+}
+
+#one{
+    color: yellow;
+}
+
+#two{
+    color: rgb(180, 10, 115);
+}

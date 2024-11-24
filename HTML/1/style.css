@@ -27,3 +27,9 @@ h1{
 #two{
     color: rgb(180, 10, 115);
 }
+
+.setting_text{
+    color: rgb(12, 110, 110);
+    font-size: 50px;
+    text-align: center;
+}

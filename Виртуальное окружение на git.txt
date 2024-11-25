@@ -1,27 +1,35 @@
 Виртуальное окружение на git
 
+cmd:
 python -m venv .venv
 
+создать файл:
 gitignore
 # venv
 .env
 .venv
 
+cmd:
 source .venv/bin/activate
 
 pip-пакетный менеджер 
 
 библиотека requests
 
+cmd:
 pip install requests
 
+в файле:
 import requests
 
+ошибки парсера:
 200-запрос принят
 406-не норм формат для запроса
 
+cmd:
 pip install beautifulsoup4
 
+cmd:
 pip install html5lib
 
 

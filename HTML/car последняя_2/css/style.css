@@ -1,0 +1,102 @@
+.header_get{
+    background-color: rgb(110, 209, 209);
+    padding-left:  300px;
+    padding-right: 300px;
+    background-image: url(./image/welcome-banner.jpg);
+    height: 920px;
+    width: 1200px;
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: 400px 1fr;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.menu {
+    margin-top: 25px;
+}
+
+.menu li{
+    display: inline;
+    text-transform: uppercase;
+    margin-right: 25px;
+    font-size: 20px;
+    
+    
+}
+
+h2{
+    text-align: center;
+}
+
+
+
+.h1_main{
+    text-align: center;
+}
+.lorem{
+    text-align: center;
+}
+
+
+.section_1{
+
+}
+
+.section_2{
+
+}
+.section_3{
+
+}
+
+.cars{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* padding-left: 140px; */
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+
+.section_4{
+
+}
+
+
+.section_5{
+
+}
+
+
+.container_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+}
+
+.my_photo{
+    height: 100px;
+    /* background-color: rgb(136, 153, 153); */
+    /* border: 1px solid black; */
+    /* padding-left: 80px;
+    padding-right: 55px;
+    padding-top: 30px; */
+
+    margin-left: 80px;
+    margin-right: 55px;
+    margin-top: 30px;
+    
+}
+
+
+.section_footer{
+
+}

@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(21, 56, 56);
+    background-image: url(../images/ai-abstract-black-stone-monstera-leaf-background-artificial-intelligence_620092-951.avif);
+    background-size: cover;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.test{
+    /* background-color: aqua; */
+    background-image: url(../images/tulip-bubble-with-rainbow-it_111797-833.avif);
+    height: 350px;
+    width: 350px;
+}

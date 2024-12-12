@@ -59,64 +59,40 @@ h2{
 
 }
 
-.my_cart{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; */
-    /* padding-left: 140px; */
-    /* margin-left: 250px; */
-    /* margin-right: 250px; */
-    /* border: 1px solid black; */
-    /* background-color: aqua; */
-}
-
-
-
-.cars{
+.carts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* background-color: aquamarine; */
-    margin-left: 250px;
-    margin-right: 250px;
+    
+    margin-left: 320px;
+    margin-right: 320px;
 
 }
 
-.cars div{
+.photo-block{
     border: 1px solid rgb(220, 193, 224, 0.712);
     width: 250px;
     height: 200px;
-    
 }
 
-.cars img{
+.photo-block img{
     padding-left: 15px;
     padding-top: 40px;
 }
 
 .model{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-top: -17px;
-    margin-bottom: -15px;
-}
-
-.model p{
     border: 1px solid rgb(220, 193, 224, 0.712);
+    -webkit-text-fill-color: rgba(139, 135, 139, 0.712);
+
     width: 245px;
     height: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
     
-
 }
 
-.text{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-left: 250px;
-    margin-right: 250px;
+.cart-1 p{
+    padding-right: 20px;
 }
 
 

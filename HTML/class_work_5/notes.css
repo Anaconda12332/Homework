@@ -1,0 +1,75 @@
+
+
+    background-repeat: no-repeat;
+
+отменяет повторы картинки
+
+    background-size: 100%;
+
+растягивает картинку
+
+    opacity: 0.2;
+прозрачность блока(для подложки класть второй див в див с картинкой и 
+задавать ему прозрачность(=подложка))
+
+    background-position: top right; /       background-position: 500px 500px ;
+
+двигает картинку фона в ксс
+двойное значение двигает в два направдления
+
+overflow: scroll;
+позволяет скролить большой текст(он сворачивается)
+
+background-attachment: local;
+
+текст скролится вместе с картинкой
+
+html:
+
+<textarea name="test" id="test" class="test_2"></textarea>
+
+css:
+
+.test_2{
+    width: 300px;
+    height: 200px;
+    /* background-color: rebeccapurple; */
+    background-image: url(./images/samye-strashnye-kartinki-3.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+
+}
+
+делает картнку(просто блок/форму которую можно растягивать и
+ в ней можно писать)
+
+                            добавление нескольких картинок
+
+.test_3{
+    height: 500px;
+    border: 1px solid black;
+    background-image:   url(./images/samye-strashnye-kartinki-3.webp),
+                        url(./images/test3.webp),
+                        url(./images/test2.png);
+
+    background-repeat:  no-repeat, 
+                        no-repeat, 
+                        no-repeat;
+
+    background-position: left top, 
+                         center top,
+                         right top;
+
+    background-size:    33% 300px, -- адаптивность(картинки едут и 
+    занимают оджно и тожке место)
+
+                        300px 300px, -- при изменении размера окна сайта-
+                        все поедет
+                        33% 300px;
+
+
+                    }
+
+
+
+адаптивность(это подстройка под другие устройства)

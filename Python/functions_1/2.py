@@ -9,4 +9,4 @@ def even(num, num_2):
 
 user_input=list(map(int, (input('Введите два числа через пробел: ')).split()))
 
-print(f'Простые числа в указанном диапазоне: ', *even(*user_input))
+print(f'Четные числа в указанном диапазоне: ', *even(*user_input))

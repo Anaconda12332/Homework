@@ -4,7 +4,7 @@ def shapes(lenn, sign, bools):
                 ]for i in range(lenn)]
 
     elif bools == True:
-        return [["*" for i in range(lenn)]for j in range(lenn)]
+        return [[sign for i in range(lenn)]for j in range(lenn)]
 
 
 user_lenn=int(input("Введите длину стороны квадрата: ") )

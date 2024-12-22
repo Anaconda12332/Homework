@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(116, 143, 143);
+  
+    
+}
+
+
+.my_form{
+    height: 50px;
+    background-color: aqua;
+}
+
+.my_forms1::placeholder{
+        color: brown;
+}
+
+.scrol{
+    height: 100px;
+    width: 400px;
+    background-color: rgb(61, 59, 185);
+    /* overflow: hidden; (обрезка текста) */
+    /* overflow: scroll; */
+    overflow: auto; (уберет нижний ползунок)
+
+}

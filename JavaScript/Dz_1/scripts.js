@@ -1,14 +1,4 @@
 
-// function myFunction1(){
-//     let name = prompt("Ввидите ваше имя: ");
-//     alert(`Привет ${name} !`)
-// };
-
-
-// window.onload= myFunction1;
-
-
-
                                                 // 1
 
 let names = prompt("Ввидите ваше имя: ");
@@ -16,32 +6,38 @@ let names = prompt("Ввидите ваше имя: ");
 alert(`Привет,${names}!`);
 
                                                 // 2 
+
 let yearUser = prompt("Ввидите ваш год рождения: ");
 const year = 2025
 
 alert(`Вам ${year-yearUser} лет`)
 
                                                 // 3
+
 let line = prompt("Ввидите сторону квадрата: ");
 alert(`Периметр квадрата равен: ${line*4} `)
 
                                                 // 4
+
 let x = prompt("Ввидите радиус окружности: ");
 alert(`Площадь окружности равна: ${(x**2) * 3.14} `)
 
                                                 // 5
+
 let distance = prompt("Ввидите растояние: ");
 let time = prompt("Укажите желаемое время: ");
 
 alert(`Скорость, с которой необходимо двигаться: ${distance/time} `)
 
                                                 // 6
+
 let dollar = prompt("Введите колличество долларов: ");
 const euro = 0.98;
 
 alert(`Ваши доллары в евро: ${dollar*euro}`)
 
                                                 // 7
+
 let gb = prompt("Введите количество гигабайтов: ");
 const sizeFile = 0.82;
 
@@ -71,5 +67,6 @@ alert(numb);
 }
 
                                                 // 10
+                                                
 let numb = prompt('Введите целое число: ');
 alert(numb%2 == 0 && 'Ваше число четное' ||  'Ваше число нечетное')

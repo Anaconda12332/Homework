@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    /* padding-left: 500px; */
+    justify-content: center;
+}
+
+/* .conteiner{
+    border-radius: 8px;
+    background-color: rgb(212, 0, 255);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+} */
+
+h1{
+    font-size: 24px;
+}
+
+button{
+    cursor: pointer;
+}
+
+#massage{
+    color: green;
+    font-size: 20px;
+}

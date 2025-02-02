@@ -1,0 +1,26 @@
+body {
+    margin:  0;
+    overflow: hidden;
+
+}
+
+.game-area {
+    width: 100vw;
+    height: 100vw;
+    background-color: #26224e;
+    position: relative;
+}
+
+.snake {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+}
+
+.food {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+} 

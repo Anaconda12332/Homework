@@ -1,16 +1,16 @@
-let vkl = Number(prompt('Введите величину вклада: '));20
+let contribution = Number(prompt('Введите величину вклада: '));
 
-let num = Number(prompt('Введите ставку в процентах: '));5
-
-
-let a
-let count
-
-for (let i = 1; a <= vkl*2; i++){
-    a = vkl+((vkl/100)*num);
-    count=i
-    alert(count)
-}
+let num = Number(prompt('Введите ставку в процентах: '));
 
 
-alert(count, a)
+let money = contribution;
+let count = 0;
+
+for (let i = 1; contribution <= money*2; i++){
+    contribution = contribution+((contribution/100)*num);
+    count = i;
+    //alert(contribution);
+};
+
+
+alert(`Вклад увеличится вдвое через ${count} лет`);

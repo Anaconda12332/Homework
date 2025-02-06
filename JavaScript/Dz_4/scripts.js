@@ -183,39 +183,74 @@
 
 // alert(`Полное время между датами: ${time(dataOne, dataTwo)}`);                               
 
-function day(чис, мес, год,){
-    let del = мес == 4 || мес == 6 || мес == 9 || мес == 11 ? del = 30: год %4 == 0 || год %400 == 0 ? del = 28 : del = 29 
+// function day(чис, мес, месс, год){
+//     let del = мес == 4 || мес == 6 || мес == 9 || мес == 11 ? del = 30: год %4 == 0 || год %400 == 0 || год %100 == 0? del = 28 : del = 29 
 
-    for (let i = чис; i < del; i++){
+//     for (let i = чис; i < (месс - мес); i++){
 
-    }
-}
+//     }
+// }
 
-function time(чис, мес, год, чисс, месс, годсс){ 
-   
+// function day(год, годсс ){
+//     let del = год %4 == 0 || год %400 == 0 || год %100 == 0? del = 28 : del = 29 
 
-    let allDays = ((годсс-год) * 360) + ((месс - мес) * 30.417) + (чисс-чис);
-    alert(allDays)
-    let allSec = allDays * 86400 
+//     for (let i = чис; i < (месс - мес); i++){
 
-    let hours = Math.floor(allSec / 3600); 1
+//     }
+// }
+
+function sec(allDays){
+    let allSec = allDays * 86400; 
+
+    let hours = Math.floor(allSec / 3600); 
     let min = Math.floor(allSec% 3600 / 60);
     let secc = allSec - (hours * 3600) - (min * 60);
+
     return hours + ':'+ min + ':' + secc
+
+};
+
+
+function time(num, mount, year, numT, mountT, yearT){ 
+   
+    
+    let allDays = ((yearT-year) * 365) + Math.floor(((mountT - mount) * 31)) + (numT-num);
+    alert(allDays)
+
+    if (mount != mountT){
+        for (let i = mount ; i <= mountT; i++){
+            i == 4 || i  == 6 ||  i == 9 || i  == 11 ? allDays -= 1 : i == 2 ? allDays -= 3: allDays -= 0;
+        }
+    
+    };
+    
+    for (let i = year; i <= yearT; i++){
+        i %4 == 0 || i %400 == 0 ? allDays += 1 : allDays += 0
+    }
+    
+    alert(allDays)
+
+    // let allSec = allDays * 86400 
+
+    // let hours = Math.floor(allSec / 3600); 
+    // let min = Math.floor(allSec% 3600 / 60);
+    // let secc = allSec - (hours * 3600) - (min * 60);
+    // return hours + ':'+ min + ':' + secc
+    return sec(allDays)
         
 }                            
 
-let чисОне = Number(prompt('Введите первую дату: '));  
-let месОне = Number(prompt('Введите первую дату: ')); 
-let годОне = Number(prompt('Введите первую дату: ')); 
+let numOne = Number(prompt('Введите число первой даты: '));  
+let mountOne = Number(prompt('Введите месяц первой даты: ')); 
+let yearOne = Number(prompt('Введите год первой даты: ')); 
 
-let чисTwo = Number(prompt('Введите вторую дату: ')); 
-let месTwo = Number(prompt('Введите вторую дату: '));   
-let годTwo = Number(prompt('Введите вторую дату: '));   
+let numTwo = Number(prompt('Введите число второй даты: ')); 
+let mountTwo = Number(prompt('Введите месяц второй даты: '));   
+let yearTwo = Number(prompt('Введите год второй даты: '));   
 
 
 alert(`Полное время между датами: ${time(
-    чисОне, месОне, годОне, чисTwo, месTwo, годTwo)}`);   
+    numOne, mountOne, yearOne, numTwo, mountTwo, yearTwo)}`);   
 
 // let allDays = ((26-25) * 360) + ((1 - 1) * 30.417) + (14-12);
 // alert(allDays) 

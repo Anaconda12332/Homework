@@ -30,7 +30,8 @@ class LinkedList:
                     break
                 else:
                     current = current.next
-            current.next = new_node
+            if not current.next:
+                current.next = new_node
         self.bring_out()
 
     def off_last(self):

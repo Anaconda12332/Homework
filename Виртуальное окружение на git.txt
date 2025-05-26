@@ -33,7 +33,8 @@ cmd:
 pip install html5lib
 
 
-
+Выключить среду:
+deactivate
 
 
 

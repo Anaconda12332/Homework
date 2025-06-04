@@ -56,8 +56,8 @@ class HomeMediator(Mediator):
         self.audio_system = None
 
     def notify(self, sender: Any, event: str) -> None:
-        if isinstance(sender, AlarmClock) and event == "wake_up":
-            print("[Mediator]Событие: Будильник сработал!")
+        if isinstance(sender, AlarmClock) and event == "up":
+            print("[Mediator]: Событие 'сработал будильник'")
             self.curtains.open()
             self.lights.turn_on()
             self.coffee_machine.brew()
@@ -66,28 +66,28 @@ class HomeMediator(Mediator):
 
 class AlarmClock(SmartDevice):
     def trigger(self):
-        print("[AlarmClock]Будильник сработал!")
-        self.mediator.notify(self, "wake_up")
+        print("[AlarmClock]: Будильник сработал!")
+        self.mediator.notify(self, "up")
 
 
 class CoffeeMachine(SmartDevice):
     def brew(self):
-        print("[CoffeeMachine]Кофе готово!")
+        print("[CoffeeMachine]: Кофе готовится!")
 
 
 class Curtains(SmartDevice):
     def open(self):
-        print("[Curtains]Шторы открыты!")
+        print("[Curtains]: Шторы открываются!")
 
 
 class Lights(SmartDevice):
     def turn_on(self):
-        print("[Lights]Свет включен!")
+        print("[Lights]: Свет включается!")
 
 
 class AudioSystem(SmartDevice):
     def play_music(self):
-        print("[AudioSystem]Музыка проигрывается!")
+        print("[AudioSystem]: Музыка проигрывается!")
 
 
 mediator = HomeMediator()

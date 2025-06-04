@@ -258,11 +258,14 @@ class Waiter:
 
 
 kitchen = Kitchen()
-
 coffee_cmd = MakeCoffeeCommand(kitchen)
-
+tea_cmd = MakeTeaCommand(kitchen)
+sandwich_cmd = MakeSandwichCommand(kitchen)
 waiter = Waiter()
 
 waiter.take_order(coffee_cmd)
-
 waiter.cancel_last_order()
+waiter.cancel_last_order()
+
+waiter.take_order(tea_cmd)
+waiter.take_order(sandwich_cmd)

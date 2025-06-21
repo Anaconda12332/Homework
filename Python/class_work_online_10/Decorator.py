@@ -17,12 +17,15 @@ VipAccessDecorator - цена * 1.5 с вип доступом
 InsuranceDecorator - цена + 100 со страховкой
 LastMinuteDecorator - цена * 1.3 за срочную покупку
 """
+from abc import ABC, abstractmethod
 
 
-class Ticket:
+class Ticket(ABC):
+    @abstractmethod
     def get_price(self):
         raise NotImplementedError
 
+    @abstractmethod
     def get_description(self):
         raise NotImplementedError
 
@@ -79,5 +82,3 @@ decor = InsuranceDecorator(decor)
 decor = LastMinuteDecorator(decor)
 
 print(decor.get_price(), decor.get_description())
-
-# print(tiket.get_price(), tiket.get_description())

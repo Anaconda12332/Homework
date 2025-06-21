@@ -17,6 +17,7 @@ StickerMessage содержит ссылку на StickerType внеш
 
 """
 from datetime import datetime
+from time import sleep
 
 
 class StickerType:
@@ -57,21 +58,28 @@ class Chat:
 
     def add_sticker(self, user_name, target_user_name, shape_name, image):
         shape_type = StickerFactory.get_shape_type(shape_name, image)
-        date = datetime.now()
-        time = datetime.time(date)
+        time = datetime.time(datetime.now())
         sticker = StickerMessage(user_name, target_user_name, time, shape_type)
         self.stickers.append(sticker)
+        sleep(1)
 
     def send_all(self):
         for sticker in self.stickers:
             sticker.send()
+            sleep(0.2)
 
 
 chat = Chat()
 chat.add_sticker("Вася", "Петя", "ромашка", "name_one.jpg")
 chat.add_sticker("Вася", "Петя", "ромашка", "name_one.jpg")
+chat.add_sticker("Петя", "Вася", "ромашка", "name_two.jpg")
 chat.add_sticker("Петя", "Вася", "кошка", "name_three.jpg")
+chat.add_sticker("Петя", "Вася", "кошка", "name_three.jpg")
+chat.add_sticker("Петя", "Вася", "птица", "name_four.jpg")
 chat.add_sticker("Петя", "Вася", "собака", "name_three.jpg")
-chat.add_sticker("Вася", "Петя", "сердце", "ass.jpg")
+chat.add_sticker("Петя", "Вася", "собака", "name_three.jpg")
+chat.add_sticker("Вася", "Петя", "сердце", "name_one.jpg")
+chat.add_sticker("Вася", "Петя", "сердце", "name_one.jpg")
+print('-' * 50)
 
 chat.send_all()

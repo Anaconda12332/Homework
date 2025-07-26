@@ -1,12 +1,13 @@
 import requests
+from token_1 import TOKEN
 
-
+token = TOKEN
 names = ['kennethreitz', 'microsoft', 'google']
 result = []
 
 for i in names:
     url = f'https://api.github.com/users/{i}/repos'
-    headers = {'Acept': 'application/vnd.github.v3+json'}
+    headers = {"Authorization": f"token {token}"}
 
     response = requests.get(url, headers=headers)
 
@@ -19,7 +20,7 @@ for i in names:
             result.append({
                 'Пользователь': i,
                 'name': name,
-                'star': stargazers_count
+                'stars': stargazers_count
             })
     else:
         print('Ошибка', response.status_code)

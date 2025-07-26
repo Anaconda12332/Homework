@@ -1,9 +1,10 @@
 import requests
+from token_1 import TOKEN
 
-
+token = TOKEN
 name = 'octocat'
 url = f'https://api.github.com/users/{name}/repos'
-headers = {'Acept': 'application/vnd.github.v3+json'}
+headers = {"Authorization": f"token {token}"}
 
 response = requests.get(url, headers=headers)
 if response.status_code == 200:

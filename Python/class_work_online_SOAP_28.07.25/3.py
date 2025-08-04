@@ -35,4 +35,5 @@ else:
     print('ошибка', response.status_code)
 
 for series in episodes:
-    print(series)
+    for key, value in series.items():
+        print(f'{key}: {value}')
